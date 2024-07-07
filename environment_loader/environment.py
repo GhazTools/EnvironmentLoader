@@ -39,6 +39,8 @@ class Environment:
 
         if environment_path:
             Environment._environment_path = environment_path
+        else:
+            Environment._environment_path = None
 
     @staticmethod
     def load_environment_variables() -> None:
