@@ -22,6 +22,6 @@ jobs:
       run: python -m build
     - name: Publish to PyPI
       env:
-        TWINE_USERNAME: __token__
+        TWINE_USERNAME: ghaz
         TWINE_PASSWORD: ${{ secrets.MAIN_PYPI_PASSWORD }}
       run: twine upload --verbose dist/*
