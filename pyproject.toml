@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "environment-loader"
+version = "0.0.1"
+authors = [
+    { name = "Ghazanfar Shahbaz", email = "ghazanfarshahbaz2409@gmail.com" },
+]
+description = "A simple class to verify environment variables & get environment variables while avoiding typos."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["python-dotenv==1.0.1"]
+
+[project.urls]
+"Homepage" = "https://github.com/GhazTools/EnvironmentLoader"
