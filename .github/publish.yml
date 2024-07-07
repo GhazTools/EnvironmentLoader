@@ -24,4 +24,6 @@ jobs:
       env:
         TWINE_USERNAME: __token__
         TWINE_PASSWORD: ${{ secrets.MAIN_PYPI_PASSWORD }}
-      run: twine upload --verbose dist/*
+      run: |
+        python -m pip install twine
+        twine upload --verbose dist/*
